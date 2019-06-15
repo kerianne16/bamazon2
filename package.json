@@ -1,0 +1,23 @@
+{
+  "name": "bamazon2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bamazoncustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kerianne16/bamazon2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kerianne16/bamazon2/issues"
+  },
+  "homepage": "https://github.com/kerianne16/bamazon2#readme",
+  "dependencies": {
+    "inquirer": "^6.3.1"
+  }
+}

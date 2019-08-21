@@ -112,14 +112,14 @@ function selectQuantity(itemID) {
             })
         .then(function (selection) {
             console.log(`you selected:  ${itemID}`)
-            console.log(`quanity: ${selection.quanity}`)
+            console.log(`quanity: ${selection.quantity}`)
             const query = "SELECT * from products where ?"
             connection.query(query, { item_id: itemID }, function (err, res) {
                 let quantityAvailable = res[0].stock_quantity
                 let myTotal = res[0].price * selection.quantity
                 if (quantityAvailable < selection.quantity) {
                     console.log(`There are only ${quantityAvailable} units in stock`)
-                    console.log("Insufficent Quanity!")
+                    console.log("Insufficent Quantity!")
                     searchProducts()
                 }
                 else {
